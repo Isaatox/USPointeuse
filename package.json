@@ -1,0 +1,30 @@
+{
+  "name": "role-assign",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node src/index.js 2> ./logs/errors_$(date +'%d-%m-%Y_%H:%M:%S').log",
+    "start:dev": "nodemon ./src/index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@discordjs/rest": "^1.0.1",
+    "axios": "^1.6.0",
+    "datetime": "^0.0.3",
+    "discord": "^0.8.2",
+    "discord.js": "^14.8.0",
+    "google-tts-api": "^2.0.2",
+    "music-metadata": "^7.14.0",
+    "pg": "^8.11.3",
+    "uuid": "^9.0.0"
+  },
+  "type": "commonjs",
+  "devDependencies": {
+    "dotenv": "^16.0.1",
+    "nodemon": "^2.0.19"
+  }
+}
